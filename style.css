@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* ========= Root Colors =========*/
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+  flex-direction: column;
+}
+
+/* ============ Main =========== */
+main {
+  width: 375px;
+}
+
+/* ========= TOP-SECTION ======== */
+.top {
+  background-color: var(--Soft-red);
+  border-radius: 1rem;
+  padding: 1.3rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance p{
+   color: var(--Very-pale-orange);
+   margin-bottom: 4px;
+   font-weight: 400;
+}
+
+/* ========= BOTTOM-SECTION ======== */
+.bottom {
+   background-color: var(--Very-pale-orange);
+   padding: 1.5rem;
+   border-radius: 1rem;
+   margin-top: 20px;
+}
+
+.chart {
+    margin: 1rem 0;
+ }
+
+.divid {
+    background-color: var(--Cream);
+    height: 2px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.this-month p {
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--Medium-brown);
+}
+
+.this-month h1 {
+    font-size: 37px;
+}
+
+.last-month p:first-child{
+   text-align: right;
+   font-weight: 700;
+} 
+
+
+.last-month p:nth-child(2) {
+   color: var(--Medium-brown);
+   font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    width: 100%;
+    padding-inline: .5rem;
+  }
+}
