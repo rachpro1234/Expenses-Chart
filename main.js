@@ -37,9 +37,6 @@ new Chart(ctx, {
       y: {
         display: false,
       },
-      x: {
-        display: false,
-      }
     },
     plugins: {
       legend: {
